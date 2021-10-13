@@ -1,7 +1,7 @@
 node {
     stage('SCM') {
 	echo 'Gathering code from version control'
-	echo "$(branch)"
+	echo "${params.branch}"
     }
     stage('Build') {
         echo 'Building....'

@@ -1,7 +1,7 @@
 node {
     stage('SCM') {
     	echo 'Gathering code from version control'
-	git branch: ${params.branch} , url: 'https://github.com/aalmanzaui1/JenkinsGroovy'
+	git branch: "${branch}" , url: 'https://github.com/aalmanzaui1/JenkinsGroovy'
     }
     stage('Build') {
         echo 'Building....'
